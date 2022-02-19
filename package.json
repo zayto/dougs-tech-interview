@@ -1,0 +1,19 @@
+{
+  "name": "dougs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "01": "ts-node ./src/01.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
