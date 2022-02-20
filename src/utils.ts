@@ -1,3 +1,5 @@
+import { IMovement } from "./interfaces";
+
 export const DEFAULT_MONTHS_BALANCE_DELTA = {
   january: 0,
   february: 0,
@@ -42,6 +44,14 @@ export const getMonthByIndex = (index: number): MonthKeys => {
       // default case should never happen
       return "december";
   }
+};
+
+export const parseMovementsWithDates = (movements: any[]): IMovement[] => {
+  // Parse the ISO date strings into actual Dates
+  return (movements || []).map((m) => ({
+    ...m,
+    date: new Date(m.date),
+  }));
 };
 
 export type MonthKeys =
