@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "01": "ts-node ./src/01.ts",
+    "01": "ts-node ./src/solutions.ts",
+    "generate-data": "ts-node ./src/resources/generate-data.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
